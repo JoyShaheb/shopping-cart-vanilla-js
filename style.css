@@ -1,0 +1,95 @@
+/**
+* ! Changing default styles of the browser
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+i {
+  cursor: pointer;
+}
+
+/**
+* ! Navbar styles are here
+**/
+
+.navbar {
+  padding: 25px 60px;
+  margin-bottom: 30px;
+  background-color: #212529;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar > .cart {
+  background-color: #fff;
+  color: #212529;
+  position: relative;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.navbar > .cart > .cartAmount {
+  position: absolute;
+  border-radius: 3px;
+  padding: 3px;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  color: white;
+  background-color: red;
+}
+
+/**
+* ! Shop items are here
+**/
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  justify-content: center;
+  gap: 30px;
+}
+
+.item {
+  border: 2px solid #212529;
+  border-radius: 4px;
+  width: 223px;
+  text-transform: capitalize;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.price-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash {
+  color: red;
+}
+
+.bi-plus-lg {
+  color: green;
+}
